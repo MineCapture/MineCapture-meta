@@ -1,0 +1,16 @@
+{
+  "apps": {
+    "ProdElec": {
+      "version": "1.0.0",
+      "lastUpdated": "2025-10-07",
+      "updateNotes": "first release of app for devices.",
+      "downloadURL": "https://yourusername.github.io/electrician-app/"
+    },
+    "Salvage": {
+      "version": "1.0.0",
+      "lastUpdated": "2025-10-07",
+      "updateNotes": "first release of app for devices.",
+      "downloadURL": "https://yourusername.github.io/electrician-app/"
+    }
+  }
+}

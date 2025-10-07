@@ -4,7 +4,7 @@
       "version": "1.0.0",
       "lastUpdated": "2025-10-07",
       "updateNotes": "first release of app for devices.",
-      "downloadURL": "https://yourusername.github.io/electrician-app/"
+      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/ProdElecApp/ProdElecv1.0.0.apk"
     },
     "Salvage": {
       "version": "1.0.0",
@@ -15,4 +15,5 @@
   }
 
 }
+
 

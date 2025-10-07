@@ -1,7 +1,7 @@
 {
   "apps": {
     "ProdElec": {
-      "version": "1.0.0",
+      "version": "1.0.2",
       "lastUpdated": "2025-10-07",
       "updateNotes": "first release of app for devices.",
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/ProdElecApp/ProdElecv1.0.0.apk"
@@ -15,5 +15,6 @@
   }
 
 }
+
 
 

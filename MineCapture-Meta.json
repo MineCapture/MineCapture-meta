@@ -8,6 +8,7 @@
     },
     "Salvage": {
       "version": "1.0.0",
+      "lookupVersion": "1"
       "lastUpdated": "2025-10-07",
       "updateNotes": "first release of app for devices.",
       "downloadURL": "https://yourusername.github.io/electrician-app/"
@@ -15,6 +16,7 @@
   }
 
 }
+
 
 
 

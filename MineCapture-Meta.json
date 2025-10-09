@@ -13,9 +13,17 @@
       "updateNotes": "first release of app for devices.",
       "downloadURL": "https://yourusername.github.io/electrician-app/"
     }
-  }
+  },
+   "EventLogger": {
+      "version": "1.0.0",
+      "lookupVersion": "1.0",
+      "lastUpdated": "2025-10-09",
+      "updateNotes": "first release of app for devices.",
+      "downloadURL": "https://yourusername.github.io/electrician-app/"
+    }
 
 }
+
 
 
 

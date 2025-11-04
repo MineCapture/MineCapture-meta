@@ -14,7 +14,7 @@
       "downloadURL": "https://yourusername.github.io/electrician-app/"
     },
     "EventLogger": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "lookupVersion": "1.0",
       "lastUpdated": "2025-10-09",
       "updateNotes": "first release of app for devices.",
@@ -22,6 +22,7 @@
     }
   }
 }
+
 
 
 

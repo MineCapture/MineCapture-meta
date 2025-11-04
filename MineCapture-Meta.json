@@ -11,6 +11,13 @@
       "lookupVersion": "1.0",
       "lastUpdated": "2025-10-07",
       "updateNotes": "first release of app for devices.",
+      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/blob/d907dd88a8bdc720f5b9117010334d7a061adb0f/Salvagev1.0.0.apk"
+    },
+    "LHD": {
+      "version": "1.0.0",
+      "lookupVersion": "1.0",
+      "lastUpdated": "2025-10-07",
+      "updateNotes": "first release of app for devices.",
       "downloadURL": "https://yourusername.github.io/electrician-app/"
     },
     "EventLogger": {
@@ -22,6 +29,7 @@
     }
   }
 }
+
 
 
 

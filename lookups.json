@@ -1,0 +1,124 @@
+﻿{
+  "meta": [
+    {
+      "appName": "LHD",
+      "version": "1.0"
+    }
+  ],
+  "drillers": [
+    {
+      "drillerName": "Adam I'Anson"
+    },
+    {
+      "drillerName": "Andrew Bacon"
+    },
+    {
+      "drillerName": "Andrew Dering"
+    },
+    {
+      "drillerName": "Bryn Drinkhall"
+    },
+    {
+      "drillerName": "Chris Williams"
+    },
+    {
+      "drillerName": "David Scaife"
+    },
+    {
+      "drillerName": "Karl Byers"
+    },
+    {
+      "drillerName": "Kevin Brown"
+    },
+    {
+      "drillerName": "Martin Wood"
+    },
+    {
+      "drillerName": "Michael Moore"
+    }
+  ],
+  "rigs": [
+    {
+      "rigName": "UD1"
+    },
+    {
+      "rigName": "UD2"
+    },
+    {
+      "rigName": "UD3"
+    },
+    {
+      "rigName": "UD4"
+    },
+    {
+      "rigName": "UD5"
+    },
+    {
+      "rigName": "B20"
+    }
+  ],
+  "states": [
+    {
+      "stateName": "Drilling"
+    },
+    {
+      "stateName": "Survey"
+    },
+    {
+      "stateName": "Dropout"
+    },
+    {
+      "stateName": "Pulling"
+    },
+    {
+      "stateName": "Lowering"
+    },
+    {
+      "stateName": "Delay"
+    },
+    {
+      "stateName": "Breakdown"
+    }
+  ],
+  "surveyTools": [
+    {
+      "toolName": "EZ01"
+    },
+    {
+      "toolName": "EZ02"
+    },
+    {
+      "toolName": "EZ03"
+    },
+    {
+      "toolName": "EZ04"
+    },
+    {
+      "toolName": "EZ05"
+    },
+    {
+      "toolName": "EZ06"
+    },
+    {
+      "toolName": "EZ07"
+    },
+    {
+      "toolName": "EZ1133"
+    },
+    {
+      "toolName": "EZ1134"
+    },
+    {
+      "toolName": "EZ1140"
+    },
+    {
+      "toolName": "EZ1498"
+    },
+    {
+      "toolName": "EZ1526"
+    },
+    {
+      "toolName": "EZ1527"
+    }
+  ]
+}

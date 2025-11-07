@@ -14,7 +14,7 @@
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/blob/9984a2f49962641c3bb0a8e270032cc863ca904f/Salvagev1.0.0.apk"
     },
     "LHD": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "lookupVersion": "1.0",
       "lastUpdated": "2025-11-07",
       "updateNotes": "first release of app for devices.",
@@ -29,5 +29,6 @@
     }
   }
 }
+
 
 

@@ -18,7 +18,7 @@
       "lookupVersion": "1.0",
       "lastUpdated": "2025-11-07",
       "updateNotes": "first release of app for devices.",
-      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/blob/e4feba8796ff5576b5a9b9b171eb6e82f0490e0a/LHDv1.0.0.apk"
+      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/blob/411ce3dc8d28b8421e51d0ff683c7d0babddcb94/LHDv1.0.1.apk"
     },
     "EventLogger": {
       "version": "1.0.0",
@@ -29,6 +29,7 @@
     }
   }
 }
+
 
 
 

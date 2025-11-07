@@ -18,7 +18,7 @@
       "lookupVersion": "1.0",
       "lastUpdated": "2025-10-07",
       "updateNotes": "first release of app for devices.",
-      "downloadURL": "https://yourusername.github.io/electrician-app/"
+      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/blob/e4feba8796ff5576b5a9b9b171eb6e82f0490e0a/LHDv1.0.0.apk"
     },
     "EventLogger": {
       "version": "1.0.0",
@@ -29,3 +29,4 @@
     }
   }
 }
+

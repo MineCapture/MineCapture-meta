@@ -14,10 +14,10 @@
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/blob/9984a2f49962641c3bb0a8e270032cc863ca904f/Salvagev1.0.0.apk"
     },
     "LHD": {
-      "version": "1.0.1",
+      "version": "1.0.2",
       "lookupVersion": "1.0",
       "lastUpdated": "2025-11-07",
-      "updateNotes": "first release of app for devices.",
+      "updateNotes": "Update 11 Nov 2025 - fixes to correct depths when editting jobs and encryption of data to database.",
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv1.0.1.apk"
     },
     "EventLogger": {
@@ -29,6 +29,7 @@
     }
   }
 }
+
 
 
 

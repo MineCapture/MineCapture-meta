@@ -7,12 +7,11 @@
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/ProdElecApp/ProdElecv1.0.0.apk"
     },
     "Salvage": {
-      "version": "1.0.0",
-      "lookupVersion": "1.0",
-      "lastUpdated": "2025-10-07",
-      "updateNotes": "first release of app for devices.",
-      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/blob/9984a2f49962641c3bb0a8e270032cc863ca904f/Salvagev1.0.0.apk"
-    },
+      "version": "1.0.1",
+      "lookupVersion": "1.1",
+      "lastUpdated": "2025-11-11",
+      "updateNotes": "Update v1.0.1 on 11/11/2025 - added encryption of data.",
+      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/SalvageReport/Salvagev1.0.1.apk"
     "LHD": {
       "version": "1.0.2",
       "lookupVersion": "1.0",
@@ -29,6 +28,7 @@
     }
   }
 }
+
 
 
 

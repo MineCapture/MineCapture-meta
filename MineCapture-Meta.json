@@ -12,6 +12,7 @@
       "lastUpdated": "2025-11-11",
       "updateNotes": "Update v1.0.0 on 11/11/2025 - added encryption of data.",
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/SalvageReport/Salvagev1.0.1.apk"
+    },
     "LHD": {
       "version": "1.0.2",
       "lookupVersion": "1.0",
@@ -28,6 +29,7 @@
     }
   }
 }
+
 
 
 

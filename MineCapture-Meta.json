@@ -18,7 +18,7 @@
       "lookupVersion": "1.0",
       "lastUpdated": "2025-11-07",
       "updateNotes": "Update 11 Nov 2025 - fixes to correct depths when editting jobs and encryption of data to database.",
-      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv1.0.2.apk"
+      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv1.0.3.apk"
     },
     "EventLogger": {
       "version": "1.0.0",
@@ -29,6 +29,7 @@
     }
   }
 }
+
 
 
 

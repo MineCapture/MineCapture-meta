@@ -16,8 +16,8 @@
     "LHD": {
       "version": "1.0.2",
       "lookupVersion": "1.0",
-      "lastUpdated": "2025-11-07",
-      "updateNotes": "Update 11 Nov 2025 - fixes to correct depths when editting jobs and encryption of data to database.",
+      "lastUpdated": "2025-11-17",
+      "updateNotes": "Update 17 Nov 2025 - After deleting a report, the create shift values will clear correctly.",
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv1.0.3.apk"
     },
     "EventLogger": {
@@ -29,6 +29,7 @@
     }
   }
 }
+
 
 
 

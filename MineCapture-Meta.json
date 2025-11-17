@@ -14,11 +14,11 @@
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/SalvageReport/Salvagev1.0.1.apk"
     },
     "LHD": {
-      "version": "1.0.3",
+      "version": "1.0.4",
       "lookupVersion": "1.0",
       "lastUpdated": "2025-11-17",
-      "updateNotes": "Update 17 Nov 2025 - After deleting a report, the create shift values will clear correctly.",
-      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv1.0.3.apk"
+      "updateNotes": "Update 17 Nov 2025 - hot fix to shift details. Core Photo file names now include Hole Information.",
+      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv1.0.4.apk"
     },
     "EventLogger": {
       "version": "1.0.0",
@@ -29,6 +29,7 @@
     }
   }
 }
+
 
 
 

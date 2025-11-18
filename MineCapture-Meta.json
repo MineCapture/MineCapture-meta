@@ -17,7 +17,7 @@
       "version": "1.0.5",
       "lookupVersion": "1.0",
       "lastUpdated": "2025-11-17",
-      "updateNotes": "Update 17 Nov 2025 - hot fix to shift details. Core Photo file names now include Hole Information.",
+      "updateNotes": "Update 18 Nov 2025 - hot fix to holeLetter in the states table",
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv1.0.5.apk"
     },
     "EventLogger": {
@@ -29,6 +29,7 @@
     }
   }
 }
+
 
 
 

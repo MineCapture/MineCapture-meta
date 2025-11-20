@@ -14,11 +14,11 @@
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/SalvageReport/Salvagev1.0.1.apk"
     },
     "LHD": {
-      "version": "1.0.5",
+      "version": "1.1.0",
       "lookupVersion": "1.0",
-      "lastUpdated": "2025-11-17",
-      "updateNotes": "Update 18 Nov 2025 - hot fix to holeLetter in the states table",
-      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv1.0.5.apk"
+      "lastUpdated": "2025-11-20",
+      "updateNotes": "Update 20th Nov - "shift notes" tab added to capture end of shift info, error checking of data when trying to send report. Dropout now uses a startDepth, fcore and endDepth at the 15m survey point",
+      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv1.1.0.apk"
     },
     "EventLogger": {
       "version": "1.0.0",
@@ -29,6 +29,7 @@
     }
   }
 }
+
 
 
 

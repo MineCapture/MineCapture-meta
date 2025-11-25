@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TSA Shift Report v2.0</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ensure scaling for mobile devices -->
+</head>
+
+
+<header>
+ <img src="data:image/png;base64,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" alt=""ICL Logo" class="icl-logo"/>
+Geology TSA Shift Report
+</header>
+
+<body>
+
+<h1 id="reportHeading">Enter Shift Details to Continue</h1>
+
+
+<!--Create a division for the meta data for CSS formatting-->
+<details id="shiftDetails">
+  <summary>Shift Details</summary>
+
+<div class="form-grid">
+  <!--Column labels-->
+  <label for="ondateInput">Select Date:</label>
+
+
+  <!--onDate-->
+  <input type="date" id="ondateInput" />
+  <label for="userList">Select TSAs:</label>
+
+  <!--TSA PickList-->
+  <select id="userList" multiple size="6">
+  <option value="Jonathan Hutton">Jonathan Hutton</option>
+  <option value="Michael Weedy">Michael Weedy</option>
+  <option value="Thomas Allan">Thomas Allan</option>
+  <option value="Stewart Murdoch">Stewart Murdoch</option>
+  <option value="Alex Wall">Alex Wall</option>
+  <option value="Stuart Billany">Stuart Billany</option>
+  <option value="Phil Welsh">Phil Welsh</option>
+  </select>
+
+  <!-- Shiftletter PickList-->
+  <label for="shiftLetterList">Shift:</label>
+  <select id="shiftLetterList" size="4">
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  </select>
+
+  <!--Shift PickList-->
+  <label for="shiftList">Days/Nights</label>
+  <select id="shiftList" size="2">
+  <option value="DAYS">DAYS</option>
+  <option value="NIGHTS">NIGHTS</option>
+  </select>
+</div> <!--end division for metadata-->
+
+
+
+<button id="saveBtn">Create Report</button>
+</details>
+
+<!--Grade Controller-->
+<details id="gradeController">
+ <summary>Grade Controller </summary>
+
+<!-- Results -->
+<div id="results">
+  <h3>Totals</h3>
+  <p><strong>Total Tonnage:</strong> <span id="total-tonnage">0</span></p>
+  <p><strong>Weighted Avg K2O % (ROM):</strong> <span id="avg-k2o">0.00</span></p>
+  <p><strong>Weighted Avg Halite % (ROM):</strong> <span id="avg-halite">0.00</span></p>
+  <hr>
+  <p><strong>Granular K2O %:</strong> <span id="granular-k2o">0.00</span></p>
+  <p><strong>Granular Halite %:</strong> <span id="granular-halite">0.00</span></p>
+  <p><strong>Standard K2O %:</strong> <span id="standard-k2o">0.00</span></p>
+  <p><strong>Standard Halite %:</strong> <span id="standard-halite">0.00</span></p>
+  <hr>
+   <details>
+  <h4>Target Settings</h4>
+  <label>Granular K2O Target: 
+    <input type="number" step="0.1" id="granular-target" value="14">
+  </label>
+  <label>Granular K2O Min: 
+    <input type="number" step="0.1" id="granular-min" value="13.8">
+  </label>
+  <br>
+  <label>Standard K2O Target: 
+    <input type="number" step="0.1" id="standard-target" value="13">
+  </label>
+  <label>Standard K2O Min: 
+    <input type="number" step="0.1" id="standard-min" value="12.8">
+  </label>
+  </details>
+</div>
+
+  <!-- Headings List -->
+<div id="heading-list">
+  <h3>Headings Entered</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Panel</th>
+        <th>Heading</th>
+        <th>Chainage</th>
+        <th>K2O %</th>
+        <th>Halite %</th>
+        <th>Tonnage</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="heading-rows">
+      <!-- rows inserted dynamically -->
+    </tbody>
+  </table>
+  <hr>
+</div>
+
+<br>
+<br>
+
+<!-- Add Heading Form -->
+<form id="grade-form">
+  <div>
+    <label for="panel">Panel</label>
+    <input type="text" id="panel" placeholder="Enter panel name">
+  </div>
+
+  <div>
+    <label for="heading">Heading</label>
+    <input type="text" id="heading" placeholder="Enter heading name">
+  </div>
+
+  <div>
+    <label for="chainage">Chainage</label>
+    <input type="number" id="chainage" placeholder="e.g. 100">
+  </div>
+
+  <div>
+    <label for="k2o">K2O %</label>
+    <input type="number" step="0.01" id="k2o" placeholder="e.g. 14.1">
+  </div>
+
+  <div>
+    <label for="halite">Halite %</label>
+    <input type="number" step="0.01" id="halite" placeholder="e.g. 5">
+  </div>
+
+  <div>
+    <label for="tonnage">Planned Tonnage</label>
+    <input type="number" step="1" id="tonnage" placeholder="e.g. 600">
+  </div>
+
+  <button type="button" id="add-heading">Add Heading</button>
+  <button type="button" id="update-heading" style="display:none;">Update Heading</button>
+</form>
+
+
+
+
+</details>
+<!--Create Event-->
+<details id="createEvent">
+ <summary>Create Event </summary>
+ <br>
+Use this to start an event. Then add details later by using "edit" button in the Event Log Table
+<br>
+<br>
+
+<label for="eventTitle">Event Title:</label>
+<input type="text" id="eventTitleInput" placeholder="Enter description of event">
+
+<label for="locationInput">Location:</label>
+<input type="text" id="locationInput" placeholder="Enter Location">
+
+<button id="startEventBtn">Create Event</button>
+</details> <!-- event details-->
+
+
+
+<div id="eventDetailsForm" style="display:true;">
+<details id="eventDetails">
+ <summary>Event Details</summary>
+  <label>Title: <input type="text" id="editTitle"></label>
+  <label>Location: <input type="text" id="editLocation"></label>
+  <label>Start Time: <input type="datetime-local" id="editStartTime"></label>
+  <label>End Time: <input type="datetime-local" id="editEndTime"></label>
+  <label>Tasks:
+    <select id="editTasks" multiple>
+      <option value="Map">Map</option>
+      <option value="Probe-2m">Probe 2m</option>
+      <option value="Probe-S/C">Probe S/C</option>
+      <option value="Probe-Explo">Probe Explo</option>
+      <option value="Rockmapper">Rockmapper</option>
+      <option value="Sample">Sample</option>
+      <option value="Gradelines">Gradelines</option>
+      <option value="Instructions">Instructions</option>
+      <option value="Dolly-CL">Dolly-CL</option>
+      <option value="Dolly-XC">Dolly-XC</option>
+      <option value="HerringboneLines">HerringboneLines</option>
+      <option value="VentSurvey">VentSurvey</option>
+      <option value="other">Other</option>
+    </select>
+  </label>
+  <label for="editComment">Comment:</label>
+  <input type="text" id="editComment" placeholder="Enter detail/info">
+
+  <button id="saveEventBtn">Save</button>
+  <button id="cancelEditBtn">Cancel</button>
+</div>
+
+
+
+</details> <!-- edit event-->
+
+<!--Event list table-->
+<h3>Events Log</h3>
+<table id="eventTable" border="1">
+  <thead>
+    <tr>
+      <th>Start Time</th>
+      <th>End Time</th>
+      <th>Location</th>
+      <th>Event</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<h3>Handover Notes </h3>
+<textarea id="handover" placeholder="Enter handover info" rows="4" style="width: 100%; padding: 8px; font-size: 1em;"></textarea>
+ <button id="saveHandoverBtn">Save Handover</button>
+<br><br>
+
+<h3>Anticipated Work for Next Shift </h3>
+<textarea id="nextShift" placeholder="Enter anticipated work" rows="4" style="width: 100%; padding: 8px; font-size: 1em;"></textarea>
+ <button id="saveNextShiftBtn">Save Next Shift Info</button>
+<br><br>
+<br><br>
+
+<button id="exportJSONBtn">Export Report File (JSON)</button>
+<br><br>
+<button id="deleteDataBtn">Delete Data</button>
+
+<style>
+/* Base Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0C1F3F; /* Dark Blue background */
+  color: #FFFFFF; /* White text */
+  margin: 0;
+  padding: 0 0.9375rem; /* 15px = 0.9375rem */
+}
+
+header {
+  background-color: #003974;
+  padding: 0.625rem; /* 10px = 0.625rem */
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #4DA4D9;
+}
+
+header img {
+  height: 2.5rem; /* 40px = 2.5rem */
+  vertical-align: middle;
+  margin-right: 0.625rem; /* 10px = 0.625rem */
+}
+
+/* Summaries */
+summary {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  summary {
+    font-size: 1.2rem;
+    padding: 0.75rem;
+  }
+}
+
+/* Buttons */
+button {
+  background-color: #4DA4D9; /* Light blue/teal */
+  color: #0C1F3F; /* dark blue text for contrast */
+  border: none;
+  border-radius: 0.5rem; /* 8px = 0.5rem */
+  padding: 0.875rem 1.375rem; /* 14px 22px */
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.25s ease;
+  box-shadow: 0 0.125rem 0.375rem rgba(77,164,217,0.4); /* 2px 6px */
+}
+
+button:hover {
+  background-color: #3B8CC1; /* slightly darker light blue on hover */
+}
+
+/* Inputs and Selects */
+input, select, textarea {
+  width: 100%;
+  padding: 0.75rem 0.875rem; /* 12px 14px */
+  margin: 0.625rem 0 1rem 0; /* 10px 0 16px 0 */
+  border: 0.09375rem solid #4DA4D9; /* 1.5px border */
+  border-radius: 0.5rem; /* 8px */
+  font-size: 1rem;
+  color: #FFFFFF;
+  background-color: #0C1F3F; /* dark blue background */
+  box-sizing: border-box;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #A0C8E8; /* lighter blue placeholder text */
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #66B032; /* green accent on focus */
+  background-color: #122A55; /* slightly lighter dark blue */
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: 0.375rem; /* 6px */
+}
+
+/* Containers and Sections */
+.container {
+  max-width: 37.5rem; /* 600px */
+  margin: 1.25rem auto; /* 20px */
+  padding: 0.625rem; /* 10px */
+}
+
+section {
+  border-bottom: 1px solid #3B8CC1; /* subtle border with light blue */
+  padding-bottom: 1rem; /* 16px */
+  margin-bottom: 1.25rem; /* 20px */
+}
+
+/* Scrollable content (for mobile ease) */
+.scrollable {
+  overflow-x: auto;
+}
+
+/* Responsive font sizing for mobile */
+@media (max-width: 30rem) { /* 480px */
+  body {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  button {
+    padding: 0.75rem 1.125rem; /* 12px 18px */
+    font-size: 0.95rem;
+  }
+
+  header {
+    font-size: 1.1rem;
+  }
+}
+
+</style>
+
+<script>
+
+//global variables
+let reportID;
+let eventID;
+let db;
+
+//---------------------Start up--------------------------
+// Open (or create) the database
+
+const request = indexedDB.open("ShiftReportDB", 1);
+
+
+request.onupgradeneeded = function(event) {
+  db = event.target.result;
+  
+//check to see that table doesn't already exist before creating it
+if (!db.objectStoreNames.contains("reports")) {
+    db.createObjectStore("reports", { keyPath: "reportID"}); // Write the primary key "reportID" used to identify individual reports
+  }
+
+// Create events store with eventID key and index on reportID
+
+  if (!db.objectStoreNames.contains("events")) {
+    const eventsStore = db.createObjectStore("events", { keyPath: "eventID"}); //add a unique eventID for each event record
+    //Create an index to link events.reportID to reports.reportID (foreign key)
+    eventsStore.createIndex("reportIDIndex", "reportID", { unique: false });
+  }
+
+  // New store for targets (singleton record)
+  if (!db.objectStoreNames.contains("targets")) {
+    db.createObjectStore("targets", { keyPath: "id" }); // single record with id="main"
+  }
+
+  // New store for headings
+  if (!db.objectStoreNames.contains("headings")) {
+    const headingsStore = db.createObjectStore("headings", { keyPath: "headingID" });
+    headingsStore.createIndex("reportIDIndex", "reportID", { unique: false });
+  }
+
+  // New store for totals
+  if (!db.objectStoreNames.contains("totals")) {
+    const totalsStore = db.createObjectStore("totals", { keyPath: "reportID" });
+  }
+
+}; //onupgradeneeded
+
+request.onsuccess = function(event) {
+  db = event.target.result;
+  console.log("Database ready");
+setShiftDetailsInitialState(); //if there are records in the "reports" table, collapse the detail, otherwise expand 
+initTargets(); //initialise the grade target values from the database or assign defaults if absent
+};
+
+request.onerror = function(event) {
+  console.error("Database error:", event.target.error);
+  
+};
+
+//----------------------Set intial state of the page formatting------------------------
+// sets the starting format based on whether there are existing records (report not submitted) or not in the "reports" table
+function setShiftDetailsInitialState() {
+  const transaction = db.transaction(["reports"], "readonly");
+  const store = transaction.objectStore("reports");
+  const countRequest = store.count();
+
+  countRequest.onsuccess = function() {
+    const hasRecords = countRequest.result > 0;
+    const shiftDetailsDiv = document.getElementById("shiftDetails");
+    const heading = document.getElementById("reportHeading");
+
+    if (hasRecords) {
+      shiftDetailsDiv.open= false; // Collapse if records exist
+    
+      const getLastRecord = store.openCursor(null, "prev");
+      getLastRecord.onsuccess = function(event) {
+        const cursor = event.target.result;
+        if (cursor) {
+          const report = cursor.value;     
+          reportID = report.reportID    
+          const headingText = `Report for ${report.date} ${report.shift} ${report.shiftletter} - ${Array.isArray(report.users) ? report.users.join(", ") : report.users}`;
+          heading.textContent = headingText;
+          handover.textContent = report.handover
+	  nextShift.textContent = report.nextShift
+         loadEvents(reportID);
+      
+        }
+      };
+
+
+
+
+    } else {
+      shiftDetailsDiv.open = true; // Expand if no records
+      heading.textContent = "Enter Shift Details to Continue";
+    }
+  };
+
+  countRequest.onerror = function() {
+    console.error("Failed to count reports.");
+  };
+}
+
+function initTargets() {
+  const transaction = db.transaction(["targets"], "readwrite");
+  const store = transaction.objectStore("targets");
+  
+  const getRequest = store.get("main");
+  getRequest.onsuccess = function(event) {
+    if (!event.target.result) {
+      // Insert default targets
+      const defaultTargets = {
+        id: "main",
+        granularTarget: 14,
+        granularMin: 13.8,
+        standardTarget: 13,
+        standardMin: 12.8
+      };
+      store.add(defaultTargets);
+    } else {
+      // Populate inputs with stored values
+      const t = event.target.result;
+      document.getElementById("granular-target").value = t.granularTarget;
+      document.getElementById("granular-min").value = t.granularMin;
+      document.getElementById("standard-target").value = t.standardTarget;
+      document.getElementById("standard-min").value = t.standardMin;
+    }
+  };
+}
+
+
+
+// ----------------Save button /Create shift Function----------------------
+document.getElementById("saveBtn").addEventListener("click", function() {
+
+
+  //does a report already exist in the DB? only 1 is allowed!
+let transaction = db.transaction(["reports"], "readonly");
+let store = transaction.objectStore("reports");
+let countRequest = store.count();
+
+  countRequest.onsuccess = function() {
+    const hasRecords = countRequest.result > 0;
+    if (hasRecords) {
+      //report record already exists! exit the code and alert the user!
+      alert("A shift report already exists! To create a new report, you must delete data to start a new one!");
+      document.getElementById("shiftDetails").open=false;
+      return;
+    };
+
+
+
+  //OnDate
+  const onDate = document.getElementById("ondateInput").value;
+  console.log("Selected date:", onDate);
+
+ //TSAs userList
+  const userList = document.getElementById("userList");
+  const selectedTSAs = [];  //make new array
+
+  for(let option of userList.options){ //let option = number of options in the select box
+    if (option.selected) {             // if the option is selected,
+      selectedTSAs.push(option.value); //push ("add") it to the array
+    }                                 //else, next option
+  }                                   // for each option
+
+   //shiftList
+  const shiftLetter = document.getElementById("shiftLetterList").value;
+  //days/nights
+  const shift= document.getElementById("shiftList").value;
+
+
+console.log("Selected TSAs:", selectedTSAs);
+
+//Error Checking
+if(!onDate){
+  alert("Please select a date for the report!");
+   return; //exit function
+}
+if(selectedTSAs.length===0){
+  alert("Please select a User!");
+  return; //exit function
+}
+
+if(!shiftLetter){
+  alert("choose a shift letter");
+  return;
+}
+
+if(!shift){
+  alert("pick days or nights");
+  return;
+}
+
+//create unique reportID for this report
+reportID = generateGUID()
+
+//Prepare the Record
+const record = {
+  reportID: reportID,
+  date: onDate,
+  users: selectedTSAs,
+  shiftletter: shiftLetter,
+  shift: shift
+};
+
+//Write record to the DB
+
+transaction = db.transaction(["reports"], "readwrite");
+store = transaction.objectStore("reports");
+countRequest = store.count();
+
+//declared higher up in this function
+    //const transaction = db.transaction(["reports"], "readwrite");
+    //const store = transaction.objectStore("reports");
+
+//write the new shift report record, listen for the onsuccess and get the value of the reportID
+const request = store.add(record);
+
+request.onsuccess = function(event) {
+
+  console.log("Record Saved:", record, "with reportID:", reportID);
+  alert("Record added: " + JSON.stringify(record));
+
+   setShiftDetailsInitialState(); //set the format for the page, now with the new record added
+
+};
+  
+};
+
+});
+// End of Save Button Function
+
+
+
+//---------------------Grade Controller------------------------------------------------------------------------------------------------------------------------------------------------
+function initGradeController() {
+  const addBtn = document.getElementById("add-heading");
+  const updateBtn = document.getElementById("update-heading");
+  const rowsContainer = document.getElementById("heading-rows");
+
+  let editID = null;
+
+  // ---------------- Load headings ----------------
+  function loadHeadingsFromDB() {
+    if (!db || !reportID) return; // safety check
+
+    const transaction = db.transaction(["headings"], "readonly");
+    const store = transaction.objectStore("headings");
+    const index = store.index("reportIDIndex");
+
+    index.getAll(IDBKeyRange.only(reportID)).onsuccess = function(event) {
+      const headings = event.target.result;
+      renderTable(headings);
+      updateTotals(headings);
+    };
+  }
+
+  // ---------------- Get form data ----------------
+  function getFormData() {
+    return {
+      panel: document.getElementById("panel").value.trim(),
+      heading: document.getElementById("heading").value.trim(),
+      chainage: document.getElementById("chainage").value.trim(),
+      k2o: parseFloat(document.getElementById("k2o").value),
+      halite: parseFloat(document.getElementById("halite").value),
+      tonnage: parseFloat(document.getElementById("tonnage").value)
+    };
+  }
+
+  function validateForm(data) {
+    return data.panel && data.heading && data.chainage &&
+           !isNaN(data.k2o) && !isNaN(data.halite) && !isNaN(data.tonnage);
+  }
+
+  function resetForm() {
+    document.getElementById("grade-form").reset();
+    addBtn.style.display = "inline-block";
+    updateBtn.style.display = "none";
+    editID = null;
+  }
+
+  // ---------------- Add Heading ----------------
+  addBtn.addEventListener("click", () => {
+    
+ // Check a report exists before proceeding
+  const transactioncheck = db.transaction(["reports"], "readonly");
+  const storecheck = transactioncheck.objectStore("reports");
+  const countRequest = storecheck.count();
+
+  countRequest.onsuccess = function () {
+    const hasRecords = countRequest.result > 0;
+
+    if (!hasRecords) {
+      alert("Error: You must first create a shift report to add headings!.");
+      return;
+    }
+    }
+
+    const data = getFormData();
+    if (!validateForm(data)) { alert("Please fill all fields correctly."); return; }
+
+    const transaction = db.transaction(["headings"], "readwrite");
+    const store = transaction.objectStore("headings");
+
+    const headingRecord = { headingID: generateGUID(), reportID, ...data };
+    store.add(headingRecord).onsuccess = function() {
+      loadHeadingsFromDB();
+      resetForm();
+    };
+  });
+
+  // ---------------- Update Heading ----------------
+  updateBtn.addEventListener("click", () => {
+    if (!editID) return;
+
+    const data = getFormData();
+    if (!validateForm(data)) { alert("Please fill all fields correctly."); return; }
+
+    const transaction = db.transaction(["headings"], "readwrite");
+    const store = transaction.objectStore("headings");
+
+    store.get(editID).onsuccess = function(event) {
+      const record = event.target.result;
+      Object.assign(record, data);
+      store.put(record).onsuccess = function() {
+        loadHeadingsFromDB();
+        resetForm();
+      };
+    };
+  });
+
+  // ---------------- Render Table ----------------
+  function renderTable(headings) {
+    rowsContainer.innerHTML = "";
+    headings.forEach(h => {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${h.panel}</td>
+        <td>${h.heading}</td>
+        <td>${h.chainage}</td>
+        <td>${h.k2o.toFixed(2)}</td>
+        <td>${h.halite.toFixed(2)}</td>
+        <td>${h.tonnage.toFixed(0)}</td>
+        <td>
+          <button type="button" onclick="editHeadingDB('${h.headingID}')">Edit</button>
+          <button type="button" onclick="deleteHeadingDB('${h.headingID}')">Delete</button>
+        </td>
+      `;
+      rowsContainer.appendChild(row);
+    });
+  }
+
+  // ---------------- Edit / Delete ----------------
+  window.editHeadingDB = function(headingID) {
+    const transaction = db.transaction(["headings"], "readonly");
+    const store = transaction.objectStore("headings");
+    store.get(headingID).onsuccess = function(event) {
+      const h = event.target.result;
+      document.getElementById("panel").value = h.panel;
+      document.getElementById("heading").value = h.heading;
+      document.getElementById("chainage").value = h.chainage;
+      document.getElementById("k2o").value = h.k2o;
+      document.getElementById("halite").value = h.halite;
+      document.getElementById("tonnage").value = h.tonnage;
+
+      addBtn.style.display = "none";
+      updateBtn.style.display = "inline-block";
+      editID = headingID;
+    };
+  };
+
+  window.deleteHeadingDB = function(headingID) {
+    if (!confirm("Delete this heading?")) return;
+
+    const transaction = db.transaction(["headings"], "readwrite");
+    const store = transaction.objectStore("headings");
+    store.delete(headingID).onsuccess = function() {
+      loadHeadingsFromDB();
+    };
+  };
+
+  // ---------------- Totals & Color Coding ----------------
+  function updateTotals(headings) {
+  let totalTonnage = 0, weightedK2O = 0, weightedHalite = 0;
+
+  headings.forEach(h => {
+    totalTonnage += h.tonnage;
+    weightedK2O += h.k2o * h.tonnage;
+    weightedHalite += h.halite * h.tonnage;
+  });
+
+  let avgK2O = null, avgHalite = null;
+  let granularK2O = null, granularHalite = null;
+  let standardK2O = null, standardHalite = null;
+
+  if (totalTonnage > 0) {
+    avgK2O = weightedK2O / totalTonnage;
+    avgHalite = weightedHalite / totalTonnage;
+
+    // Your new formulas
+    granularK2O = avgK2O * 0.9988 + avgHalite * 0.0601;
+    granularHalite = avgHalite * 0.5730 - granularK2O * 0.5947 + 8.838;
+    standardK2O = avgK2O * 0.925 + avgHalite * -0.0655 + 1.009;
+    standardHalite = avgHalite * 1.3248 - standardK2O * 0.4680 + 6.7349;
+  }
+
+  // Update DOM
+  document.getElementById("total-tonnage").textContent = totalTonnage > 0 ? totalTonnage.toFixed(0) : "";
+  document.getElementById("avg-k2o").textContent = avgK2O !== null ? avgK2O.toFixed(2) : "";
+  document.getElementById("avg-halite").textContent = avgHalite !== null ? avgHalite.toFixed(2) : "";
+  document.getElementById("granular-k2o").textContent = granularK2O !== null ? granularK2O.toFixed(2) : "";
+  document.getElementById("granular-halite").textContent = granularHalite !== null ? granularHalite.toFixed(2) : "";
+  document.getElementById("standard-k2o").textContent = standardK2O !== null ? standardK2O.toFixed(2) : "";
+  document.getElementById("standard-halite").textContent = standardHalite !== null ? standardHalite.toFixed(2) : "";
+
+  // Optionally save totals to IndexedDB even if null
+  const txn = db.transaction(["totals"], "readwrite");
+  const totalsStore = txn.objectStore("totals");
+  totalsStore.put({
+    reportID,
+    totalTonnage,
+    avgK2O,
+    avgHalite,
+    granularK2O,
+    granularHalite,
+    standardK2O,
+    standardHalite,
+    timestamp: new Date().toISOString()
+  });
+
+  // --- Apply color coding based on targets ---
+const transaction = db.transaction(["targets"], "readonly");
+const store = transaction.objectStore("targets");
+store.get("main").onsuccess = function(event) {
+  const t = event.target.result;
+  if (!t) return;
+
+  const granularEl = document.getElementById("granular-k2o");
+  const standardEl = document.getElementById("standard-k2o");
+
+  if (granularK2O !== null) {
+    granularEl.style.color = granularK2O >= t.granularTarget ? "green" :
+                             granularK2O >= t.granularMin ? "orange" : "red";
+  } else {
+    granularEl.style.color = ""; // reset if null
+  }
+
+  if (standardK2O !== null) {
+    standardEl.style.color = standardK2O >= t.standardTarget ? "green" :
+                             standardK2O >= t.standardMin ? "orange" : "red";
+  } else {
+    standardEl.style.color = ""; // reset if null
+  }
+};
+
+}
+
+
+
+  // ---------------- Load totals from DB ----------------
+function loadTotalsFromDB() {
+  if (!reportID) return;
+
+  const transaction = db.transaction(["totals"], "readonly");
+  const store = transaction.objectStore("totals");
+  store.get(reportID).onsuccess = function(event) {
+    const t = event.target.result;
+    if (t) {
+      document.getElementById("total-tonnage").textContent = t.totalTonnage !== null ? t.totalTonnage.toFixed(0) : "";
+      document.getElementById("avg-k2o").textContent = t.avgK2O !== null ? t.avgK2O.toFixed(2) : "";
+      document.getElementById("avg-halite").textContent = t.avgHalite !== null ? t.avgHalite.toFixed(2) : "";
+      document.getElementById("granular-k2o").textContent = t.granularK2O !== null ? t.granularK2O.toFixed(2) : "";
+      document.getElementById("granular-halite").textContent = t.granularHalite !== null ? t.granularHalite.toFixed(2) : "";
+      document.getElementById("standard-k2o").textContent = t.standardK2O !== null ? t.standardK2O.toFixed(2) : "";
+      document.getElementById("standard-halite").textContent = t.standardHalite !== null ? t.standardHalite.toFixed(2) : "";
+    } else {
+      // No totals record yet: reset all fields to blank
+      ["total-tonnage","avg-k2o","avg-halite","granular-k2o","granular-halite","standard-k2o","standard-halite"]
+        .forEach(id => document.getElementById(id).textContent = "");
+    }
+  };
+}
+
+  // ---------------- Dynamic Target Inputs ----------------
+  function setupTargetListeners() {
+    const targetIds = ["granular-target", "granular-min", "standard-target", "standard-min"];
+
+    targetIds.forEach(id => {
+      const input = document.getElementById(id);
+      input.addEventListener("input", () => {
+        if (!db) return;
+
+        const transaction = db.transaction(["targets"], "readwrite");
+        const store = transaction.objectStore("targets");
+        store.get("main").onsuccess = function(event) {
+          let t = event.target.result;
+          if (!t) t = { id: "main" };
+
+          switch(id) {
+            case "granular-target": t.granularTarget = parseFloat(input.value); break;
+            case "granular-min": t.granularMin = parseFloat(input.value); break;
+            case "standard-target": t.standardTarget = parseFloat(input.value); break;
+            case "standard-min": t.standardMin = parseFloat(input.value); break;
+          }
+
+          store.put(t).onsuccess = function() {
+            // Recalculate totals and recolor
+            loadHeadingsFromDB();
+          };
+        };
+      });
+    });
+  }
+
+  // ---------------- Initialize Controller ----------------
+  if (db) {
+    setupTargetListeners();
+    loadHeadingsFromDB();
+    loadTotalsFromDB();
+  } else {
+    // Wait until db is ready
+    const dbReadyInterval = setInterval(() => {
+      if (db) {
+        clearInterval(dbReadyInterval);
+        setupTargetListeners();
+        loadHeadingsFromDB();
+        loadTotalsFromDB();
+      }
+    }, 100);
+  }
+}
+
+// Call this after your db is ready in request.onsuccess
+initGradeController();
+
+
+
+//-------------------------EVENTS / JOB INFO---------------------------------------------------------------------------------------------------------------------------------------------------------
+//-------------------------Add an event--------------------------------------------
+document.getElementById("startEventBtn").addEventListener("click", function () {
+
+  // Check a report exists before proceeding
+  const transaction = db.transaction(["reports"], "readonly");
+  const store = transaction.objectStore("reports");
+  const countRequest = store.count();
+
+  countRequest.onsuccess = function () {
+    const hasRecords = countRequest.result > 0;
+
+    if (!hasRecords) {
+      alert("Error: You must first create a shift report to add events.");
+      return;
+    }
+
+    // Only proceed if report exists
+    const eventTitle = document.getElementById("eventTitleInput").value.trim();
+    const eventLocation = document.getElementById("locationInput").value.trim();
+
+    if (eventTitle === "") {
+      alert("Event title cannot be empty.");
+      return;
+    }
+
+    const startTime = new Date().toISOString(); // UTC time
+    const eventID = generateGUID();
+
+    const eventRecord = {
+      eventID: eventID,
+      reportID: reportID,  // Assuming global variable
+      startTime: startTime,
+      endTime: null,
+      title: eventTitle,
+      location: eventLocation
+    };
+
+    const eventTransaction = db.transaction(["events"], "readwrite");
+    const eventStore = eventTransaction.objectStore("events");
+    const request = eventStore.add(eventRecord);
+
+    request.onsuccess = function () {
+      console.log("Event started:", eventRecord);
+      alert(`Event: ${eventTitle} started`);
+      loadEvents(reportID);
+
+      // Clear inputs
+      document.getElementById("eventTitleInput").value = "";
+      document.getElementById("locationInput").value = "";
+
+      // Collapse the createEvent summary
+      document.getElementById("createEvent").open = false;
+    };
+
+    request.onerror = function (event) {
+      console.error("Error starting event:", event.target.error);
+      alert("Failed to start event.");
+    };
+  };
+
+  countRequest.onerror = function (event) {
+    console.error("Error checking reports:", event.target.error);
+    alert("Failed to check reports.");
+  };
+});
+
+
+//----------------------------Populate the Event log table------------------
+// Function to load all events from IndexedDB and display them in the table
+function loadEvents(reportId) {
+  // Clear existing table rows
+  const tbody = document.querySelector("#eventTable tbody");
+  tbody.innerHTML = "";
+
+  // Open transaction and get all events with matching reportId
+  const transaction = db.transaction("events", "readonly");
+  const store = transaction.objectStore("events");
+  const index = store.index("reportIDIndex");  // Assuming you have a reportId index
+
+  const request = index.getAll(IDBKeyRange.only(reportId));
+
+  request.onsuccess = (event) => {
+    const events = event.target.result;
+
+    if (!events.length) {
+      // No events found for this report
+      const tr = document.createElement("tr");
+      const td = document.createElement("td");
+      td.colSpan = 5; // total columns
+      td.textContent = "No events found";
+      tr.appendChild(td);
+      tbody.appendChild(tr);
+      return;
+    }
+
+  // Sort events by startTime descending (latest first)
+  events.sort((a, b) => {
+    return new Date(b.startTime) - new Date(a.startTime);
+  });
+    // Create a row for each event
+    events.forEach(ev => {
+      const tr = document.createElement("tr");
+
+      // Format dates nicely, or show "N/A"
+      const startTime = ev.startTime ? new Date(ev.startTime).toLocaleTimeString() : "N/A";
+      const endTime = ev.endTime ? new Date(ev.endTime).toLocaleTimeString() : "N/A";
+
+      // Add columns
+      tr.innerHTML = `
+        <td>${startTime}</td>
+        <td>${endTime}</td>
+        <td>${ev.location || ""}</td>
+        <td>${ev.title || ""}</td>
+        <td><button class="editBtn" data-id="${ev.eventID}">Edit</button></td>
+      `;
+
+      tbody.appendChild(tr);
+    });
+
+    // Add event listeners to Edit buttons
+    document.querySelectorAll(".editBtn").forEach(button => {
+      button.addEventListener("click", () => {
+        eventID = button.getAttribute("data-id"); //eventId taken from the button.
+        openEventEditor();
+      });
+    });
+  };
+
+  request.onerror = (e) => {
+    console.error("Error loading events:", e);
+  };
+}
+
+
+
+//---------------------------------Event edit button on click------------------
+// ----open event editor function---
+function openEventEditor() {
+  console.log("Open editor for event ID:", eventID);
+// Expand the event details <details> block
+  const detailsBlock = document.getElementById("eventDetails");
+  detailsBlock.open = true;
+
+  // Store the eventID globally for later save
+  //editingEventID = Number(eventId);
+
+  // If start or end time is empty, on focus / open of the date time picker, set the default time to now (local)
+document.getElementById("editStartTime").addEventListener("focus", function() {
+  if (!this.value) {
+    this.value = getNowLocalDateTime();
+  }
+});
+document.getElementById("editEndTime").addEventListener("focus", function() {
+  if (!this.value) {
+    this.value = getNowLocalDateTime();
+  }
+});
+
+  // Fetch the event record from IndexedDB
+  const transaction = db.transaction(["events"], "readonly");
+  const store = transaction.objectStore("events");
+  const request = store.get(eventID);
+
+  request.onsuccess = function(event) {
+    const record = event.target.result;
+
+    if (record) {
+      // Populate the fields
+      document.getElementById("editTitle").value=record.title ? record.title : "";
+      document.getElementById("editLocation").value=record.location ? record.location : "";
+      document.getElementById("editStartTime").value =record.startTime ? UTCToLocalDateTime(record.startTime) : ""; 
+      document.getElementById("editEndTime").value = record.endTime ? UTCToLocalDateTime(record.endTime) : "";
+      document.getElementById("editComment").value=record.comment ? record.comment : "";
+
+      // Clear all selections
+      const tasksSelect = document.getElementById("editTasks");
+      for (let option of tasksSelect.options) {
+        option.selected = false;
+      }
+
+      // Select tasks based on stored record.tasks
+      if (Array.isArray(record.tasks)) {
+        for (let option of tasksSelect.options) {
+          if (record.tasks.includes(option.value)) {
+            option.selected = true;
+          }
+        }
+      }
+
+    } else {
+      alert("Event not found.");
+    }
+  };
+
+  request.onerror = function(event) {
+    console.error("Error fetching event:", event.target.error);
+    alert("Failed to load event details.");
+  };
+}
+
+
+//-----save event on click----------
+document.getElementById("saveEventBtn").addEventListener("click", function () {
+
+  //const eventId = eventID //parseInt(document.getElementById("editEventID").value);  // Hidden input for eventID
+  const updatedTitle = document.getElementById("editTitle").value.trim();
+  const updatedLocation = document.getElementById("editLocation").value.trim();
+  const updatedStartTime = document.getElementById("editStartTime").value;
+  const updatedEndTime = document.getElementById("editEndTime").value;
+  const updatedComment = document.getElementById("editComment").value.trim();
+
+  const taskList = document.getElementById("editTasks");
+
+
+  //Check Times are picked
+
+  const compareStart = new Date(updatedStartTime)
+  const compareEnd = new Date(updatedEndTime)
+
+    if(isNaN(compareStart)){
+     alert("Must pick a valid StartTime");
+     return;
+  }
+   if(isNaN(compareEnd)){
+     alert("Must pick a valid EndTime");
+     return;
+  }
+
+
+
+   //Check end vs start
+
+  if(compareEnd < compareStart){
+   alert("Error: End time must be later or equal to start time");
+   return;
+ }
+
+
+  const selectedTasks = [];  //make new array
+
+  for(let option of taskList.options){ //let option = number of options in the select box
+    if (option.selected) {             // if the option is selected,
+      selectedTasks.push(option.value); //push ("add") it to the array
+    }                                 //else, next option
+  }                                   // for each option
+
+
+  if (!(eventID)) {
+    alert("Invalid event ID. Cannot save changes.");
+    return;
+  }
+
+  const transaction = db.transaction(["events"], "readwrite");
+  const store = transaction.objectStore("events");
+
+  const getRequest = store.get(eventID);
+
+  getRequest.onsuccess = function (event) {
+    const existingRecord = event.target.result;
+
+    if (!existingRecord) {
+      alert("Event not found in database.");
+      return;
+    }
+
+    // Update the fields
+    existingRecord.title = updatedTitle;
+    existingRecord.location = updatedLocation;
+    existingRecord.startTime = updatedStartTime ? new Date(updatedStartTime).toISOString() : null;
+    existingRecord.endTime = updatedEndTime ? new Date(updatedEndTime).toISOString() : null;
+    existingRecord.tasks= selectedTasks;
+    existingRecord.comment= updatedComment;
+    
+
+    const updateRequest = store.put(existingRecord);
+
+    updateRequest.onsuccess = function () {
+      alert("Event updated successfully.");
+      loadEvents(existingRecord.reportID);  // Refresh event table
+      // Optionally hide editor here
+      const eventDetails = document.getElementById("eventDetails");
+      eventDetails.open = false // Collapse
+
+    };
+
+    updateRequest.onerror = function (e) {
+      console.error("Error updating event:", e.target.error);
+      alert("Failed to update event.");
+    };
+  };
+
+  getRequest.onerror = function (e) {
+    console.error("Error fetching event:", e.target.error);
+    alert("Error retrieving event for editing.");
+  };
+
+  eventID=null; //clear the eventID to prevent shenanigans
+});
+
+//---------------------------------Cancel event edit button on click------------------
+document.getElementById("cancelEditBtn").addEventListener("click", () => {
+
+// 1. Collapse the details panel
+  const eventDetails = document.getElementById("eventDetails");
+  eventDetails.open = false;
+
+  // 2. Clear each control's value
+  document.getElementById("editStartTime").value = "";
+  document.getElementById("editEndTime").value = "";
+  document.getElementById("editLocation").value = "";
+  document.getElementById("editTitle").value = "";
+ 
+
+  // 3. Reset the tasks multi-select
+  const tasksSelect = document.getElementById("editTasks");
+  for (let option of tasksSelect.options) {
+    option.selected = false;
+  }
+
+  // 4. Clear the editing flag
+  eventID=null; //clear the eventID to prevent shenanigans
+
+});
+
+//-----------------Save Hand-over Notes--------------------
+
+document.getElementById("saveHandoverBtn").addEventListener("click", () => {
+
+ const transaction = db.transaction(["reports"], "readwrite");
+  const store = transaction.objectStore("reports");
+
+  const getRequest = store.get(reportID);
+
+  getRequest.onsuccess = function (event) {
+    const existingRecord = event.target.result;
+
+    if (!existingRecord) {
+      alert("Report not found in database.");
+      return;
+    }
+
+    // Update the fields
+    existingRecord.handover = document.getElementById("handover").value.trim();
+ 
+
+    const updateRequest = store.put(existingRecord);
+
+    updateRequest.onsuccess = function () {
+      alert("Handover updated successfully.");
+     
+
+    };
+
+    updateRequest.onerror = function (e) {
+      console.error("Error updating handover:", e.target.error);
+      alert("Failed to update event.");
+    };
+  };
+
+  getRequest.onerror = function (e) {
+    console.error("Error fetching handover:", e.target.error);
+    alert("Error retrieving event for editing.");
+  };
+
+});
+
+//-----------------Save Anticipated Work--------------------
+
+document.getElementById("saveNextShiftBtn").addEventListener("click", () => {
+
+ const transaction = db.transaction(["reports"], "readwrite");
+  const store = transaction.objectStore("reports");
+
+  const getRequest = store.get(reportID);
+
+  getRequest.onsuccess = function (event) {
+    const existingRecord = event.target.result;
+
+    if (!existingRecord) {
+      alert("Report not found in database.");
+      return;
+    }
+
+    // Update the fields
+    existingRecord.nextShift = document.getElementById("nextShift").value.trim();
+ 
+
+    const updateRequest = store.put(existingRecord);
+
+    updateRequest.onsuccess = function () {
+      alert("Next Shift Info updated successfully.");
+     
+
+    };
+
+    updateRequest.onerror = function (e) {
+      console.error("Error updating nextShift:", e.target.error);
+      alert("Failed to update event.");
+    };
+  };
+
+  getRequest.onerror = function (e) {
+    console.error("Error fetching  nextShift:", e.target.error);
+    alert("Error retrieving event for editing.");
+  };
+
+});
+
+// ----------exportToJSON with Promises-----------------------------------------
+document.getElementById("exportJSONBtn").addEventListener("click", async function() {
+  const tables = ["reports", "events", "headings", "totals", "targets"];
+  const data = {};
+
+  try {
+    // Fetch all tables in parallel
+    await Promise.all(tables.map(tableName => {
+      return new Promise((resolve, reject) => {
+        const transaction = db.transaction([tableName], "readonly");
+        const store = transaction.objectStore(tableName);
+        const request = store.getAll();
+
+        request.onsuccess = function(event) {
+          data[tableName] = event.target.result;
+          resolve();
+        };
+
+        request.onerror = function(event) {
+          reject(`Failed to get ${tableName}: ${event.target.error}`);
+        };
+      });
+    }));
+
+    // All tables fetched, create JSON and download
+    const jsonStr = JSON.stringify(data, null, 2);
+    const blob = new Blob([jsonStr], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+
+    const link = document.createElement("a");
+    link.href = url;
+
+    // Generate timestamp for filename
+    const now = new Date();
+    const timestamp = now.getFullYear().toString() +
+      String(now.getMonth() + 1).padStart(2, '0') +
+      String(now.getDate()).padStart(2, '0') + '_' +
+      String(now.getHours()).padStart(2, '0') +
+      String(now.getMinutes()).padStart(2, '0') +
+      String(now.getSeconds()).padStart(2, '0');
+
+    link.download = `ShiftReport_${timestamp}.json`;
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+  } catch (err) {
+    console.error("Export failed:", err);
+    alert("Failed to export JSON: " + err);
+  }
+});
+
+
+
+
+
+
+//------------------- Delete Data----------------------------------------------------
+
+document.getElementById("deleteDataBtn").addEventListener("click", clearAllData);
+
+function clearAllData() {
+  if (!db) {
+    alert("Database not initialized yet.");
+    return;
+  }
+
+  const confirmDelete = confirm("This will delete this shift report. Ensure you have saved the JSON file first! Continue?");
+  if (!confirmDelete) return;
+
+  // Close the database first
+  db.close();
+
+  const deleteRequest = indexedDB.deleteDatabase("ShiftReportDB");
+
+  deleteRequest.onsuccess = function() {
+    alert("Database deleted. Refresh the page to start a new report.");
+    console.log("IndexedDB successfully deleted.");
+    location.reload(); // reload page to reinitialize
+  };
+
+  deleteRequest.onerror = function(event) {
+    console.error("Error deleting database:", event.target.error);
+    alert("Failed to delete database.");
+  };
+
+  deleteRequest.onblocked = function() {
+    console.warn("Delete blocked. Close all other tabs using this database.");
+    alert("Cannot delete database: another tab or connection is still open.");
+  };
+}
+
+
+//----pw 03/10/2025 commented this out, just delete the indexDB so that on startup the onupgradeneeded fires correctly and all tables are created.----
+//   const transaction = db.transaction(["reports", "events"], "readwrite");
+
+//   const reportsStore = transaction.objectStore("reports");
+//   const eventsStore = transaction.objectStore("events");
+
+//   const reportsClearRequest = reportsStore.clear();
+//   const eventsClearRequest = eventsStore.clear();
+
+//   reportsClearRequest.onsuccess = () => {
+//     console.log("Reports table cleared.");
+//   };
+
+//   eventsClearRequest.onsuccess = () => {
+//     console.log("events table cleared.");
+//   };
+
+//   transaction.oncomplete = () => {
+//     alert("All records cleared.");
+//     // Optionally update UI, e.g. clear selectors
+//  setShiftDetailsInitialState() 
+//   };
+
+//   transaction.onerror = (event) => {
+//     console.error("Error clearing data:", event.target.error);
+//     alert("Failed to clear records.");
+//   };
+
+
+// }
+
+//------------------END Delete Data-------------------------------------------------------
+
+
+
+
+
+//----------------CREATE A GUID------------------------------
+//guid is used to create unique record identifiers, will facilitate live updating to SQL 
+//without having to be online and fetch the ID for the record from SQL.
+
+function generateGUID() {
+  return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+    (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+  );
+}
+
+
+//------------DEALING WIH THE DREADED DATE-TIME----------------
+
+// Convert local datetime string (from <input type="datetime-local">) to UTC ISO string for storage
+function localDateTimeToUTC(localDateTimeStr) {
+  if (!localDateTimeStr) return null;
+  // localDateTimeStr format: "YYYY-MM-DDTHH:mm" (e.g., "2025-06-25T14:30")
+  const localDate = new Date(localDateTimeStr);
+  return localDate.toISOString(); // UTC ISO format
+}
+
+// Convert UTC ISO datetime string to local datetime string suitable for <input type="datetime-local">
+// Returns a string like "YYYY-MM-DDTHH:mm"
+function UTCToLocalDateTime(utcISOString) {
+  if (!utcISOString) return "";
+  const date = new Date(utcISOString);
+  // Create a string in the format "YYYY-MM-DDTHH:mm"
+  const pad = (num) => num.toString().padStart(2, "0");
+  const year = date.getFullYear();
+  const month = pad(date.getMonth() + 1);
+  const day = pad(date.getDate());
+  const hours = pad(date.getHours());
+  const minutes = pad(date.getMinutes());
+
+  return `${year}-${month}-${day}T${hours}:${minutes}`;
+}
+
+// Convert UTC ISO datetime string to local time string for display (e.g., "14:30:00")
+function UTCToLocalTimeString(utcISOString) {
+  if (!utcISOString) return "N/A";
+  const date = new Date(utcISOString);
+  return date.toLocaleTimeString();
+}
+
+// Convert UTC ISO datetime string to local date string for display (e.g., "2025-06-25")
+function UTCToLocalDateString(utcISOString) {
+  if (!utcISOString) return "N/A";
+  const date = new Date(utcISOString);
+  return date.toLocaleDateString();
+}
+
+// Get the current local time
+function getNowLocalDateTime() {
+  return UTCToLocalDateTime(new Date().toISOString());
+}
+</script>
+
+</body>
+</html>

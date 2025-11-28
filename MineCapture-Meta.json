@@ -8,14 +8,14 @@
     },
     "Salvage": {
       "version": "1.0.1",
-      "lookupVersion": "1.1",
+      "lookupVersion": "1.2",
       "lastUpdated": "2025-11-11",
       "updateNotes": "Update v1.0.0 on 11/11/2025 - added encryption of data.",
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/SalvageReport/Salvagev1.0.1.apk"
     },
     "LHD": {
       "version": "1.1.1",
-      "lookupVersion": "1.0",
+      "lookupVersion": "1.2",
       "lastUpdated": "2025-11-21",
       "updateNotes": "Update 21st Nov - minor backend changes including appVersion recording",
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv1.1.1.apk"
@@ -29,6 +29,7 @@
     }
   }
 }
+
 
 
 

@@ -16,7 +16,7 @@
     },
     "LHD": {
       "version": "1.2.0",
-      "lookupVersion": "1.7.2",
+      "lookupVersion": "1.7.3",
       "lastUpdated": "2025-11-28",
       "updateNotes": "Update 28th Nov - Shift notes are now mandatory: enter none or n/a if not required. Added picklists for Delay, breakdown and maintenance states e.g. Travel, Core Blockage etc.",
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv1.2.0.apk"
@@ -30,6 +30,7 @@
     }
   }
 }
+
 
 
 

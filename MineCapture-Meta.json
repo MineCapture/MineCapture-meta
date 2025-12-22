@@ -15,11 +15,11 @@
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/SalvageReport/Salvagev1.0.1.apk"
     },
     "LHD": {
-      "version": "1.2.0",
+      "version": "2.0.0",
       "lookupVersion": "1.7.3",
-      "lastUpdated": "2025-11-28",
-      "updateNotes": "Update 28th Nov - Shift notes are now mandatory: enter none or n/a if not required. Added picklists for Delay, breakdown and maintenance states e.g. Travel, Core Blockage etc.",
-      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv1.2.0.apk"
+      "lastUpdated": "2025-12-22",
+      "updateNotes": "Update 22nd Dec- New timeCategory and timeCode selection for capturing job info.",
+      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv2.0.0.apk"
     },
     "EventLogger": {
       "version": "1.0.0",
@@ -30,6 +30,7 @@
     }
   }
 }
+
 
 
 

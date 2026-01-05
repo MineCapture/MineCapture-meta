@@ -16,7 +16,7 @@
     },
     "LHD": {
       "version": "2.0.0",
-      "lookupVersion": "1.7.3",
+      "lookupVersion": "1.7.4",
       "lastUpdated": "2025-12-22",
       "updateNotes": "Update 22nd Dec- New timeCategory and timeCode selection for capturing job info.",
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv2.0.0.apk"
@@ -30,6 +30,7 @@
     }
   }
 }
+
 
 
 

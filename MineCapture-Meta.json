@@ -15,10 +15,10 @@
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/SalvageReport/Salvagev1.0.1.apk"
     },
     "LHD": {
-      "version": "2.0.0",
+      "version": "2.1.0",
       "lookupVersion": "1.7.5",
-      "lastUpdated": "2025-12-22",
-      "updateNotes": "Update 22nd Dec- New timeCategory and timeCode selection for capturing job info.",
+      "lastUpdated": "2025-01-05",
+      "updateNotes": "Update 5th Jan 2026 - New time model / codes implemented to record job and delay info.",
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv2.0.0.apk"
     },
     "EventLogger": {
@@ -30,6 +30,7 @@
     }
   }
 }
+
 
 
 

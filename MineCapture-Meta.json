@@ -16,7 +16,7 @@
     },
     "LHD": {
       "version": "2.1.1",
-      "lookupVersion": "1.7.5",
+      "lookupVersion": "1.7.6",
       "lastUpdated": "2025-01-06",
       "updateNotes": "Update 5th Jan 2026 - New time model / codes implemented to record job and delay info.",
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv2.1.1.apk"
@@ -30,6 +30,7 @@
     }
   }
 }
+
 
 
 

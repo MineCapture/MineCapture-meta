@@ -16,7 +16,7 @@
     },
     "LHD": {
       "version": "2.2.0",
-      "lookupVersion": "1.7.6",
+      "lookupVersion": "1.7.7",
       "lastUpdated": "2025-01-16",
       "updateNotes": "Update 16th Jan - You can now download and view previous shift reports and hole info (surveys + dropouts). Dropping out is now in the category 'drilling' + many other small fixes.",
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv2.2.0.apk"
@@ -30,6 +30,7 @@
     }
   }
 }
+
 
 
 

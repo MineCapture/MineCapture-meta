@@ -15,11 +15,11 @@
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/SalvageReport/Salvagev1.0.1.apk"
     },
     "LHD": {
-      "version": "2.2.0",
+      "version": "2.3.0",
       "lookupVersion": "1.7.7",
-      "lastUpdated": "2025-01-16",
+      "lastUpdated": "2025-01-19",
       "updateNotes": "Update 16th Jan - You can now download and view previous shift reports and hole info (surveys + dropouts). Dropping out is now in the category 'drilling' + many other small fixes.",
-      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv2.2.0.apk"
+      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv2.3.0.apk"
     },
     "EventLogger": {
       "version": "1.0.0",
@@ -30,6 +30,7 @@
     }
   }
 }
+
 
 
 

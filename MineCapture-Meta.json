@@ -15,11 +15,11 @@
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/SalvageReport/Salvagev1.0.1.apk"
     },
     "LHD": {
-      "version": "2.4.1",
+      "version": "2.4.2",
       "lookupVersion": "1.8.1",
       "lastUpdated": "2025-01-19",
-      "updateNotes": "Update 21st Jan - Fixed issue with uploading report. Added button to send error log if you have a problem, gives Phil useful info about the error.",
-      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv2.4.1.apk"
+      "updateNotes": "Update 23rd Jan - Changing the timeCode will now change which data entry controls are shown (previously they persisted), added new 'metres' label which shows you the difference between the startDepth and endDepth.",
+      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv2.4.2.apk"
     },
     "EventLogger": {
       "version": "1.0.0",
@@ -30,6 +30,7 @@
     }
   }
 }
+
 
 
 

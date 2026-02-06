@@ -16,7 +16,7 @@
     },
     "LHD": {
       "version": "2.4.2",
-      "lookupVersion": "1.8.4",
+      "lookupVersion": "1.8.5",
       "lastUpdated": "2025-01-19",
       "updateNotes": "Update 23rd Jan - Changing the timeCode will now change which data entry controls are shown (previously they persisted), added new 'metres' label which shows you the difference between the startDepth and endDepth.",
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv2.4.2.apk"
@@ -30,6 +30,7 @@
     }
   }
 }
+
 
 
 

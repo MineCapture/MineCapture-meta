@@ -18,7 +18,7 @@
       "version": "2.5.2",
       "lookupVersion": "1.8.5",
       "lastUpdated": "2025-02/06",
-      "updateNotes": "Update 6th Feb - New feel app, navigate using the burger button. XRF data can now be captured and other work added as rig.",
+      "updateNotes": "Update 6th Feb - New look and feel, navigate using the burger button. XRF data can now be captured and other work added as rig.",
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv2.5.2.apk"
     },
     "EventLogger": {
@@ -30,6 +30,7 @@
     }
   }
 }
+
 
 
 

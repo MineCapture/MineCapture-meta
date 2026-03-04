@@ -21,6 +21,13 @@
       "updateNotes": "Update 16th Feb - App will recieve notifications when a new report is submitted, or new instructions are available.",
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv2.6.0.apk"
     },
+    "TSA": {
+      "version": "1.0.0",
+      "lookupVersion": "1.0.0",
+      "lastUpdated": "2025-03-04",
+      "updateNotes": "First release.",
+      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/TSAreport/TSAv1.0.0.apk"
+    },
     "EventLogger": {
       "version": "1.0.0",
       "lookupVersion": "1.0",
@@ -30,6 +37,7 @@
     }
   }
 }
+
 
 
 

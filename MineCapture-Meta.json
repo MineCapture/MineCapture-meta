@@ -28,6 +28,12 @@
       "updateNotes": "First release.",
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/TSAreport/TSAv1.0.0.apk"
     },
+    "SAP Notifications": {
+      "version": "1.0",
+      "lastUpdated": "2025-04-15",
+      "updateNotes": "First release.",
+      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/TSAreport/TSAv1.0.0.apk"
+    },
     "EventLogger": {
       "version": "1.0.0",
       "lookupVersion": "1.0",

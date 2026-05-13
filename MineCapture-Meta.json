@@ -34,6 +34,12 @@
       "updateNotes": "First release.",
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/SAPNotifications/SAPNotificationsv1.0.apk"
     },
+    "Mine Production": {
+      "version": "1.0",
+      "lastUpdated": "2025-05-13",
+      "updateNotes": "First release.",
+      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/SAPNotifications/MineProductionv1.0.apk"
+    },
     "EventLogger": {
       "version": "1.0.0",
       "lookupVersion": "1.0",

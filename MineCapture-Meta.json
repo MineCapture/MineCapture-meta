@@ -35,10 +35,10 @@
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/SAPNotifications/SAPNotificationsv1.0.apk"
     },
     "mine_production": {
-      "version": "1.0",
-      "lastUpdated": "2025-05-13",
-      "updateNotes": "First release.",
-      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/MineProduction/MineProductionv1.0.apk"
+      "version": "1.1",
+      "lastUpdated": "2025-05-27",
+      "updateNotes": "Update to fix issues with uploading and syncing/downloading data automatically. Added list of existing consumable reports for editing and deleting saved reports from the device. reports flagged as (cloud) still exist in the database, just deleted from phone memory",
+      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/MineProduction/MineProductionv1.1.apk"
     },
     "EventLogger": {
       "version": "1.0.0",

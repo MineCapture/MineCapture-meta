@@ -17,8 +17,8 @@
     "LHD": {
       "version": "2.6.0",
       "lookupVersion": "1.8.7",
-      "lastUpdated": "2025-02-16",
-      "updateNotes": "Update 16th Feb - App will recieve notifications when a new report is submitted, or new instructions are available.",
+      "lastUpdated": "2025-05-28",
+      "updateNotes": "Update 28th May 2026. ***NEW FEATURES*** 1: 'Failed Dropout' no longer requires Depths or FCORE 2: XRF readings, HoleName and HoleLetter will be automatically Capitalised. 3: Geology instructions dropdown will now show both rig and holename 4: Improved error messaging when report fails to send",
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv2.6.0.apk"
     },
     "TSA": {

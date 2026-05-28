@@ -15,11 +15,11 @@
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/SalvageReport/Salvagev1.0.1.apk"
     },
     "LHD": {
-      "version": "2.6.0",
+      "version": "2.6.1",
       "lookupVersion": "1.8.7",
       "lastUpdated": "2025-05-28",
       "updateNotes": "Update 28th May 2026. ***NEW FEATURES*** 1: 'Failed Dropout' no longer requires Depths or FCORE 2: XRF readings, HoleName and HoleLetter will be automatically Capitalised. 3: Geology instructions dropdown will now show both rig and holename 4: Improved error messaging when report fails to send",
-      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv2.6.0.apk"
+      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv2.6.1.apk"
     },
     "TSA": {
       "version": "1.0.0",

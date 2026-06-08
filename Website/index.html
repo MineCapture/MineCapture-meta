@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MineCapture Login</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f3f4f6;
+      color: #111827;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .login-card {
+      width: 100%;
+      max-width: 420px;
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 24px;
+    }
+
+    .subtitle {
+      color: #6b7280;
+      margin-bottom: 24px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-top: 14px;
+      margin-bottom: 6px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background: #1f2937;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #111827;
+    }
+
+    .message {
+      margin-top: 14px;
+      font-size: 14px;
+    }
+
+    .error {
+      color: #b91c1c;
+    }
+
+    .success {
+      color: #047857;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-card">
+    <h1>MineCapture</h1>
+    <div class="subtitle">Sign in to continue</div>
+
+    <label for="email">Email</label>
+    <input id="email" type="email" autocomplete="email" />
+
+    <label for="password">Password</label>
+    <input id="password" type="password" autocomplete="current-password" />
+
+    <button id="btnLogin">Login</button>
+
+    <div id="loginMessage" class="message"></div>
+  </div>
+
+  <script>
+    const SUPABASE_URL = "https://vcvbexodpyqmmlqtgayu.supabase.co";
+    const SUPABASE_KEY = "sb_publishable_qeovW-HD0Lqqxx56VDuqrg_FKnEiozO";
+
+    const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+    const emailInput = document.getElementById("email");
+    const passwordInput = document.getElementById("password");
+    const btnLogin = document.getElementById("btnLogin");
+    const loginMessage = document.getElementById("loginMessage");
+
+    async function checkExistingSession() {
+      const { data } = await supabaseClient.auth.getSession();
+
+      if (data.session) {
+        window.location.href = "nav.html";
+      }
+    }
+
+    async function login() {
+      const email = emailInput.value.trim();
+      const password = passwordInput.value;
+
+      loginMessage.textContent = "";
+      loginMessage.className = "message";
+
+      if (!email || !password) {
+        loginMessage.textContent = "Enter email and password.";
+        loginMessage.classList.add("error");
+        return;
+      }
+
+      btnLogin.disabled = true;
+      btnLogin.textContent = "Logging in...";
+
+      const { data, error } = await supabaseClient.auth.signInWithPassword({
+        email,
+        password
+      });
+
+      btnLogin.disabled = false;
+      btnLogin.textContent = "Login";
+
+      if (error) {
+        loginMessage.textContent = error.message;
+        loginMessage.classList.add("error");
+        return;
+      }
+
+      if (data.session) {
+        window.location.href = "nav.html";
+      }
+    }
+
+    btnLogin.addEventListener("click", login);
+
+    passwordInput.addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        login();
+      }
+    });
+
+    checkExistingSession();
+  </script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MineCapture Downloads</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: #f8fafc;
+    }
+
+    header {
+      padding: 24px 8%;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    main {
+      padding: 40px 8%;
+      max-width: 900px;
+    }
+
+    input, button {
+      padding: 12px;
+      margin: 6px 0;
+      width: 100%;
+      max-width: 360px;
+      box-sizing: border-box;
+    }
+
+    button {
+      cursor: pointer;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    .muted {
+      color: #94a3b8;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>MineCapture Downloads</h1>
+  </header>
+
+  <main>
+    <section id="loginSection">
+      <h2>Sign in</h2>
+      <p class="muted">Sign in to download MineCapture apps.</p>
+
+      <input id="emailInput" type="email" placeholder="Email" />
+      <input id="passwordInput" type="password" placeholder="Password" />
+
+      <button onclick="login()">Sign in</button>
+
+      <p id="loginMessage" class="muted"></p>
+    </section>
+
+    <section id="downloadsSection" class="hidden">
+      <h2>Available downloads</h2>
+      <p class="muted">Only install APKs from this official MineCapture page.</p>
+
+      <div id="releaseList"></div>
+
+      <button onclick="logout()">Sign out</button>
+    </section>
+  </main>
+
+  <script>
+    const SUPABASE_URL = "https://vcvbexodpyqmmlqtgayu.supabase.co";
+    const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_qeovW-HD0Lqqxx56VDuqrg_FKnEiozO";
+
+    const supabaseClient = supabase.createClient(
+      SUPABASE_URL,
+      SUPABASE_PUBLISHABLE_KEY
+    );
+
+    async function init() {
+      const { data } = await supabaseClient.auth.getSession();
+
+      if (data.session) {
+        showDownloads();
+        await loadReleases();
+      } else {
+        showLogin();
+      }
+    }
+
+    function showLogin() {
+      document.getElementById("loginSection").classList.remove("hidden");
+      document.getElementById("downloadsSection").classList.add("hidden");
+    }
+
+    function showDownloads() {
+      document.getElementById("loginSection").classList.add("hidden");
+      document.getElementById("downloadsSection").classList.remove("hidden");
+    }
+
+    async function login() {
+      const email = document.getElementById("emailInput").value.trim();
+      const password = document.getElementById("passwordInput").value;
+
+      const message = document.getElementById("loginMessage");
+      message.textContent = "Signing in...";
+
+      const { data, error } = await supabaseClient.auth.signInWithPassword({
+        email,
+        password
+      });
+
+      if (error) {
+        message.textContent = error.message;
+        return;
+      }
+
+      message.textContent = "";
+      showDownloads();
+      await loadReleases();
+    }
+
+    async function logout() {
+      await supabaseClient.auth.signOut();
+      showLogin();
+    }
+
+    async function loadReleases() {
+      const list = document.getElementById("releaseList");
+      list.innerHTML = "Loading releases...";
+
+      const { data, error } = await supabaseClient
+        .from("APP_Releases")
+        .select("*")
+        .eq("IsActive", true)
+        .order("AppName", { ascending: true })
+        .order("CreatedAt", { ascending: false });
+
+      if (error) {
+        list.innerHTML = `<p>Error loading releases: ${error.message}</p>`;
+        return;
+      }
+
+      if (!data || data.length === 0) {
+        list.innerHTML = "<p>No releases available.</p>";
+        return;
+      }
+
+      list.innerHTML = "";
+
+      data.forEach(release => {
+        const card = document.createElement("div");
+        card.className = "card";
+
+        card.innerHTML = `
+          <h3>${escapeHtml(release.AppName)}</h3>
+          <p><strong>Version:</strong> ${escapeHtml(release.Version)}</p>
+          <p class="muted">${escapeHtml(release.ReleaseNotes || "")}</p>
+          <button onclick="downloadRelease('${release.ReleaseID}')">
+            Download APK
+          </button>
+        `;
+
+        list.appendChild(card);
+      });
+    }
+
+    async function downloadRelease(releaseID) {
+      const { data: releases, error: releaseError } = await supabaseClient
+        .from("APP_Releases")
+        .select("*")
+        .eq("ReleaseID", releaseID)
+        .eq("IsActive", true)
+        .single();
+
+      if (releaseError) {
+        alert("Could not load release: " + releaseError.message);
+        return;
+      }
+
+      const { data, error } = await supabaseClient.storage
+        .from(releases.StorageBucket)
+        .createSignedUrl(releases.StoragePath, 60);
+
+      if (error) {
+        alert("Could not create download link: " + error.message);
+        return;
+      }
+
+      window.location.href = data.signedUrl;
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    init();
+  </script>
+</body>
+</html>

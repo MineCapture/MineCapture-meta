@@ -15,11 +15,11 @@
       "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/SalvageReport/Salvagev1.0.1.apk"
     },
     "LHD": {
-      "version": "2.6.3",
+      "version": "2.7",
       "lookupVersion": "1.8.7",
-      "lastUpdated": "2025-10-20",
-      "updateNotes": "Update 20th Oct 2026 - Previous shifts now correctly returns all data, rather than limited to 1000 records.",
-      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv2.6.3.apk"
+      "lastUpdated": "2025-11-05",
+      "updateNotes": "Update 5th Nov 2026 - Fixed issue where shift couldnt be started if device was offline for more than 1 hour. Allow custom configs to be entered after choosing 'other'",
+      "downloadURL": "https://github.com/MineCapture/MineCapture-meta/releases/download/LHDreport/LHDv2.7.apk"
     },
     "TSA": {
       "version": "1.0.0",
